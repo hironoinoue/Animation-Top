@@ -1,0 +1,112 @@
+<!--
+
+	【2020.04.10(sun)】
+
+
+	「animation.css」「wow.js」
+
+
+	参考サイト：　https://beginners-high.com/wow-animate/
+
+---->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>オンズ</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="js/wow.js"></script>
+</head>
+
+
+<body>
+
+
+<header>
+	<div class="inner">
+		<h1 class="text-center">ANMET
+    		<a href=""><img src="img/loading.gif" alt=""></a>
+    	</h1>
+	    <h3 class="text-center">Vanilla JavaScriptで動く［wow.js］のサンプルです。</h3>
+	</div>
+</header><!-- //HEADER -->
+
+<div id="demo">	    
+    <div class="inner">
+
+    	<div class="text-center"><!-- メイン画像 -->
+	        <section class="section wow fadeInDown">
+	        	<div class="image-animation">
+	            <img src="img/unsp-image.jpg" alt=""><p>fadeInDown</p>
+	            </div>
+            </section>
+        </div><!-- //メイン画像 -->
+
+
+        
+        <div class="col d-flex justify-content-around">
+
+        	<div class="col-3 wow slideInDown animated" data-wow-delay="0.3s">
+        		<p>slideDown<br>"data-wow-delay="0.1s""</p>
+        	</div>
+        	<div class="col-3 wow slideInDown animated" data-wow-delay="0.5s">
+        		<p>slideDown<br>deta-wow-delay="0.5s""</p>
+        	</div>
+        	<div class="col-3 wow slideInDown animated" data-wow-delay="0.7s">
+        		<p>slideDown<br>data-wow-delay="0.7s""</p>
+        	</div>
+        </div><!-- // THREE CONTENTS -->
+
+        <div class="wow pulse animated mb-5" data-wow-iteration="infinite" data-wow-duration="1500ms">
+        	<div class="box-color p-5">
+        		
+        	</div>
+        </div>
+
+        <div class="wow slideInRight animated mb-5" data-wow-delay="0.2s">
+        	<div class="image-animation">
+	            <img src="img/unsp-image.jpg" alt="">
+	        </div>
+        </div>
+     
+        <div class="wow bounceInLeft animated mb-5 " data-wow-offset="300">
+        	<div class="diamond">	
+        	</div>
+        </div>
+        <div class="wow infinite zoomInDown" data-wow-duration="3s">
+            <div class="diamond">        		
+        	</div>
+        </div>
+        <div class="wow infinite lightSpeedIn">
+        	<div class="diamond">        		
+        	</div>
+        </div><!-- //ダイヤモンド -->
+       
+    
+
+        
+        <div class="wow slideInLeft animated mb-5" data-wow-duration="2s">
+        	<div class="box-color p-5"></div>
+        </div>
+        <div class="wow fadeInDown animated mb-5">
+        	<div class="box-color p-5"></div>
+        </div>
+
+        <button id="motto">MoreRead</button><!-- //BUTOON -->
+   
+
+        
+        
+    </div>
+</div>
+<script>
+    new WOW().init(); //init()メソッドを呼び出してwow.jsを使えるようにする
+</script>
+</body>
+</html>
+
